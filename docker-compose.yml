@@ -1,5 +1,7 @@
 services:
-  app:
+  my-app:
     build: .
-    volumes:
-      - /var/log:/var/log:ro
+    image: my-script
+    container_name: my-app
+    ports:
+      - "8080:8080"
